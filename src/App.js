@@ -1,25 +1,33 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import { Box, Paper, CssBaseline } from '@mui/material';
+import { ThemeProvider } from './context/ThemeContext';
+import Counter from './components/Counter/Counter';
+import ActionLog from './components/ActionLog/ActionLog';
+import ThemeToggle from './components/ThemeToggle/ThemeToggle';
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+	return (
+		<ThemeProvider>
+			<CssBaseline/>
+			<Paper
+				elevation={ 3 }
+				sx={ {
+					p: 3,
+					height: '100vh',
+					display: 'flex',
+					flexDirection: 'column',
+					alignItems: 'center',
+					justifyContent: 'center',
+				} }
+			>
+				<Box sx={ { position: 'absolute', top: 16, right: 16, display: 'flex', gap: 1 } }>
+					<ActionLog/>
+					<ThemeToggle/>
+				</Box>
+				<Counter/>
+			</Paper>
+		</ThemeProvider>
+	);
 }
 
 export default App;
