@@ -43,9 +43,9 @@ function ThemeToggle() {
 	};
 
 	const menuItems = [
-		{ value: 'auto', label: 'Автоматически', icon: <AutoModeIcon/> },
-		{ value: 'light', label: 'Светлая', icon: <LightModeIcon/> },
-		{ value: 'dark', label: 'Тёмная', icon: <DarkModeIcon/> }
+		{ value: 'auto', label: 'Auto', icon: <AutoModeIcon/> },
+		{ value: 'light', label: 'Light', icon: <LightModeIcon/> },
+		{ value: 'dark', label: 'Dark', icon: <DarkModeIcon/> }
 	];
 
 	return (
