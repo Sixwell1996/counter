@@ -24,8 +24,7 @@ A responsive counter application built with React and Material UI, featuring the
 
 1. Clone the repository:
 
-   git clone https://github.com/username/react-counter.git
-   cd react-counter
+   git clone https://github.com/Sixwell1996/counter.git
 
 2. Install dependencies:
 
